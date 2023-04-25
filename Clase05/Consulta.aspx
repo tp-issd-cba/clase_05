@@ -14,11 +14,17 @@
             <asp:TextBox ID="CodigoTextBox" runat="server"></asp:TextBox>
             <br />
             <br />
-            <asp:Button ID="ConsultaButton" runat="server" Text="Consulta" />
+            <asp:Button ID="ConsultaButton" runat="server" Text="Consulta" OnClick="ConsultaButton_Click" />
             <br />
             <br />
             <asp:Label ID="ResultadoLabel" runat="server" Text=""></asp:Label>
             <br />
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:issdConnectionString %>" SelectCommand="SELECT articulos.id, articulos.descripcion, articulos.precio, articulos.codigorubro, rubros.descripcion AS rubroDescripcion FROM articulos INNER JOIN rubros ON articulos.codigorubro = rubros.id
+WHERE articulos.id = @codigo">
+                <SelectParameters>
+                    <asp:Parameter Name="codigo" />
+                </SelectParameters>
+            </asp:SqlDataSource>
             <br />
             <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Default.aspx">Retornar</asp:HyperLink>
         </div>

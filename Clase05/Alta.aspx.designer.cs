@@ -76,6 +76,15 @@ namespace Clase05 {
         protected global::System.Web.UI.WebControls.DropDownList RubroDropDownList;
 
         /// <summary>
+        /// Control RubrosSqlDataSource.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource RubrosSqlDataSource;
+
+        /// <summary>
         /// Control AltaButton.
         /// </summary>
         /// <remarks>
@@ -85,13 +94,22 @@ namespace Clase05 {
         protected global::System.Web.UI.WebControls.Button AltaButton;
 
         /// <summary>
-        /// Control Label4.
+        /// Control ResultadoLabel.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label4;
+        protected global::System.Web.UI.WebControls.Label ResultadoLabel;
+
+        /// <summary>
+        /// Control InsertArticuloSqlDS.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource InsertArticuloSqlDS;
 
         /// <summary>
         /// Control HyperLink1.
